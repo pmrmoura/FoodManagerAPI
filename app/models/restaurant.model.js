@@ -1,18 +1,18 @@
 const mongoose = require("mongoose");
 
-const User = mongoose.model(
-  "User",
+const Restaurant = mongoose.model(
+  "Restaurant",
   new mongoose.Schema({
     username: String,
     email: String,
     password: String,
-    roles: [
+    products: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Role"
+        ref: "Product"
       }
-    ]
+    ],
   })
 );
 
-module.exports = User;
+module.exports = Restaurant;
