@@ -25,5 +25,5 @@ exports.createProduct = (req, res) => {
   }
 
   findRestaurant()
-  res.status(200).send('parabens')
+  res.status(200).send(product)
 }

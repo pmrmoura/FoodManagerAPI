@@ -14,7 +14,7 @@ const Product = mongoose.model(
         ref: "Sale"
       }
     ],
-  })
+  }, { timestamps: true })
 );
 
 module.exports = Product;

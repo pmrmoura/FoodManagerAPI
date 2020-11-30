@@ -44,6 +44,7 @@ app.get("/", (req, res) => {
 require('./app/routes/auth.routes')(app);
 require('./app/routes/restaurant.routes')(app);
 require('./app/routes/product.routes')(app);
+require('./app/routes/sale.routes')(app);
 
 
 // set port, listen for requests

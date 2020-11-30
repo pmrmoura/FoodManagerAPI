@@ -16,7 +16,10 @@ exports.listRestaurant = (req, res) => {
   Restaurant.findById(
     id
   )
-  .populate('products')
+  .populate({
+    path: 'products',
+    populate: { path: 'sales' }
+  })
   .exec((err, restaurante) => {
     if (err) {
       res.status(500).send({ message: err });
