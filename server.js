@@ -5,7 +5,7 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin: "http://localhost:8081"
+  origin: "https://mighty-temple-51387.herokuapp.com"
 };
 
 app.use(cors(corsOptions));
