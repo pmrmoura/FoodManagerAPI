@@ -59,3 +59,7 @@ exports.signin = (req, res) => {
       });
     });
 };
+
+exports.tokenVerified = (req, res) => {
+  res.status(200).send()
+}
